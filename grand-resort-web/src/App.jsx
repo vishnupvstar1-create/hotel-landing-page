@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { Wifi, Coffee, Car, Star, CheckCircle2, MapPin, Image as ImageIcon, X } from 'lucide-react';
+import { Wifi, Coffee, Car, Star, CheckCircle2, MapPin, Image as ImageIcon, X ,Calendar} from 'lucide-react';
 import myCustomIcon from './assets/grand.png';
 
 
@@ -96,11 +96,26 @@ export default function App() {
 
       {/* Floating Book Now Button */}
       <a 
-        href="https://grand-resort-web-l1sz-ten.vercel.app/" 
-        className="fixed bottom-8 right-8 z-[99] bg-slate-900 text-white px-7 py-4 rounded-full font-bold shadow-2xl hover:bg-indigo-600 transition-all hover:-translate-y-1 flex items-center gap-2"
-      >
-        Book Now
-      </a>
+  href="https://grand-resort-web-l1sz-ten.vercel.app/" 
+  className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[99] bg-slate-900 text-white p-4 sm:px-6 sm:py-4 rounded-2xl sm:rounded-full shadow-2xl hover:bg-indigo-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-500/30 flex items-center gap-4 border border-slate-700 hover:border-indigo-500 group"
+>
+  <div className="relative bg-white/10 p-2.5 rounded-full flex-shrink-0 group-hover:bg-white/20 transition-colors">
+    {/* Pulsing green dot for "Real-time" effect */}
+    <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-slate-900 group-hover:border-indigo-600 transition-colors"></span>
+    </span>
+    {/* Make sure to import Calendar from lucide-react at the top of your file */}
+    <Calendar size={24} className="text-white" />
+  </div>
+  
+  <div className="flex flex-col pr-2">
+    <span className="font-bold text-lg leading-tight">Book Now</span>
+    <span className="text-xs text-gray-300 font-medium group-hover:text-indigo-100 transition-colors">
+      Check live room availability
+    </span>
+  </div>
+</a>
 
       {/* Hero Section */}
       <section className="relative bg-slate-900 text-white pt-24 pb-32 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center overflow-hidden">
