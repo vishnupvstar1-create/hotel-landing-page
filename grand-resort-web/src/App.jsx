@@ -94,6 +94,14 @@ export default function App() {
         </div>
       </nav>
 
+      {/* Floating Book Now Button */}
+      <a 
+        href="https://grand-resort-web-l1sz-ten.vercel.app/" 
+        className="fixed bottom-8 right-8 z-[99] bg-slate-900 text-white px-7 py-4 rounded-full font-bold shadow-2xl hover:bg-indigo-600 transition-all hover:-translate-y-1 flex items-center gap-2"
+      >
+        Book Now
+      </a>
+
       {/* Hero Section */}
       <section className="relative bg-slate-900 text-white pt-24 pb-32 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center overflow-hidden">
         {/* Decorative background blur */}

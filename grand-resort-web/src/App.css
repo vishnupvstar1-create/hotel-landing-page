@@ -181,4 +181,22 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+  .floating-book-btn {
+  position: fixed;
+  bottom: 30px; /* Sticks to the bottom */
+  right: 30px;  /* Sticks to the right */
+  background-color: #111827; /* Dark slate color */
+  color: white;
+  padding: 16px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  z-index: 9999; /* Ensures it stays on top of everything else */
+  transition: background-color 0.2s;
+}
+.floating-book-btn:hover {
+  background-color: #4f46e5; /* Indigo hover effect */
+}
 }
